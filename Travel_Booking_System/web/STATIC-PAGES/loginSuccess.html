@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Success Popup</title>
+
+    <style>
+        body{
+            background: url('../images/home-bg.jpg') no-repeat rgba(0,0,0,.5);
+        }
+        /* Styling for the popup container */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f9f9f9;
+            
+            border: 1px solid #888;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Styling for the popup content */
+        .popup-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styling for the overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            z-index: 900;
+        }
+    </style>
+</head>
+<body>
+
+<!-- The logout success popup -->
+<div id="logoutSuccessPopup" class="popup">
+    <div class="popup-content">
+        <h2>Login Successful!</h2>
+        <p>You have successfully logged in.</p>
+    </div>
+</div>
+
+<!-- Overlay to cover the entire page when the popup is displayed -->
+<div id="overlay" class="overlay"></div>
+
+<script>
+    // Function to open the popup
+    document.addEventListener('DOMContentLoaded', function() {
+    function openPopup() {
+        document.getElementById('logoutSuccessPopup').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+        setTimeout(function () {
+            window.location.href = "../SERVER-PAGES/home.jsp";
+        }, 2500);
+    }
+    openPopup();
+    });
+</script>
+
+</body>
+</html>

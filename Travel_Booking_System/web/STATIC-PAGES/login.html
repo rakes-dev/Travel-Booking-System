@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/media.css">
+    
+</head>
+<body>
+
+    <!-- login form  -->
+ 
+    <div class="login-form-container">
+   
+      <form method="post" action="http://localhost:11756/Travel_Booking_System/sessionServe">
+          <h3>login</h3>
+          <input name="EMAIL" type="email" class="box" placeholder="Enter your email">
+          <input name="PASS" id="loginPass" type="password" class="box" placeholder="Enter your password">
+          <input id="login" type="submit" value="login now" class="btn">
+          <input type="checkbox" id="remember">
+          <label for="remember">remember me</label>
+          <p>forget password? <a href="forgetLogin.html" >click here</a></p>
+          <p>don't have and account? <a href="../SERVER-PAGES/Register.jsp">register now</a></p>
+      </form>
+    </div>
+
+</body>
+</html>

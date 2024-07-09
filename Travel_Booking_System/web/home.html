@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body style="overflow: hidden;">
+   
+ <!-- header section starts  -->
+
+ <header>
+
+   <div id="menu-bar" class="fas fa-bars"></div>
+
+   <a href="#" class="logo"> <span>T</span>ravel</a>
+
+   <nav class="navbar">
+       <a href="home.html">home</a>
+       <a href="#book">book</a>
+       <a href="packages.html">packages</a>
+       <a href="services.html">services</a>
+       <a href="gallery.html">gallery</a>
+       <a href="contact.html">contact</a>
+   </nav>
+
+   <div class="icons">
+       <i class="fas fa-search" id="search-btn"></i>
+      <a href="STATIC-PAGES/login.html" id="login-link">
+            <i class="fas fa-user" id="login-btn"></i>
+        </a>
+   </div>
+
+   <form action="" class="search-bar-container">
+       <input type="search" id="search-bar" placeholder="search here...">
+       <label for="search-bar" class="fas fa-search"></label>
+   </form>
+
+</header>
+
+<!-- header section ends -->
+
+
+<!-- Login Sucess Pop up -->
+
+<!-- <div id="loginSuccessPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Login Successful!</h2>
+        <p>You have successfully logged in.</p>
+    </div>
+</div> -->
+
+ <!-- login form  -->
+ <!-- <section id="loginSection">
+ <div class="login-form-container">
+
+   <i class="fas fa-times" id="form-close"></i>
+
+   <form method="post" action="http://localhost:8084/FINAL_PROJECT/login">
+       <h3>login</h3>
+       <input name="uEMAIL" type="email" class="box" placeholder="enter your email">
+       <input name="uPASS" id="loginPass" type="password" class="box" placeholder="enter your password">
+       <input id="login" type="button" value="login now" class="btn">
+       <input type="checkbox" id="remember">
+       <label for="remember">remember me</label>
+       <p>forget password? <a href="#" id="forpass-link">click here</a></p>
+       <p>don't have and account? <a href="#" id="reg-link">register now</a></p>
+   </form>
+ </div>
+</section> -->
+
+ <!-- Register form  -->
+<!-- <section id="registerSection">
+<div class="register-form-container">
+
+    <i class="fas fa-times" id="reg-close"></i>
+ 
+    <form method="post" id="registrationForm" action="http://localhost:8084/Travel_Booking_System/RegistrationServlet">
+        <h3>Register</h3> -->
+        <!-- <label for="first-name">First Name:</label> -->
+        <!-- <input type="text" id="first-name" class="box" name="first_name" placeholder="First Name" required> -->
+        <!-- <label for="last-name">Last Name:</label> -->
+        <!-- <input type="text" id="last-name" class="box" name="last_name" placeholder="Last Name" required>
+
+        <label for="birthdate">Date of Birth:</label>
+        <input type="date" class="box" id="birthdate" name="birthdate" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" class="box" name="gender">
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="email" class="box" id="emailInput" name="email" placeholder="example@gmail.com" required>
+
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" class="box" id="password" name="password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" class="box" id="confirmPassword" name="confirm_password" required>
+
+        <label for="terms">I have read and accept the <a href="#" id="terms-link">Terms and Conditions</a></label>
+        <input type="checkbox" id="terms-checkbox" required>
+
+        <div id="terms-modal" class="modal">
+            <div class="modal-content">
+                <i class="fas fa-times" id="close-modal"></i>
+                <h2 style="background-color: #ffa500; text-align: center;">Travel Website Terms and Conditions</h2> -->
+                <!-- Your terms and conditions content here -->
+                <!-- <p>These Terms and Conditions govern your use of our travel website. By using our website, you agree to comply with and be bound by these terms. If you do not agree with these terms, please do not use this website.</p>
+
+                <h2>1. Website Use</h2>
+                <p>You agree to use this website for lawful purposes only and in a manner that does not violate the rights of, or restrict or inhibit the use and enjoyment of this website by any third party.</p>
+
+                <h2>2. User Accounts</h2>
+                <p>To access certain features or services on our website, you may need to create a user account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.</p>
+
+                <h2>3. Travel Bookings</h2>
+                <p>We facilitate travel bookings, but we do not operate, control, or supply travel services. We are not responsible for the actions, errors, or omissions of travel service providers. Your bookings are subject to their terms and conditions.</p>
+
+                <h2>4. Privacy</h2>
+                <p>We collect and use your personal information as described in our Privacy Policy. By using our website, you consent to the collection and use of your personal information as described in the Privacy Policy.</p>
+
+                <h2>5. Content and Copyright</h2>
+                <p>All content on this website, including text, images, logos, and software, is protected by copyright and other intellectual property rights. You may not use or reproduce any of our content without our express written consent.</p>
+
+                <h2>6. Disclaimer</h2>
+                <p>While we make every effort to ensure the accuracy of the information on our website, we do not guarantee its accuracy. We are not responsible for any errors, omissions, or misrepresentations in the content.</p>
+
+                <h2>7. Changes to Terms</h2>
+                <p>We may update these Terms and Conditions at any time. You should review this page periodically to ensure you are aware of any changes. Your continued use of the website signifies your acceptance of the revised terms.</p>
+
+                <h2>8. Contact Information</h2>
+                <p>If you have any questions or concerns about these Terms and Conditions, please contact us at [Your Contact Information].</p>
+
+                <p>Last updated: [Date of Last Update]</p>
+                <button id="accept-terms"type="button" class="btn">Accept</button>
+            </div>
+        </div>
+      
+        <button onclick="validatePassword(event)" id="submit-button" type="submit" class="btn" disabled >register</button>
+        <p id="error" style="color: red;"></p>
+        <p>already have an account? <a href="#" id="form-link">login now</a></p>
+    </form>
+ 
+ </div>
+</section> -->
+  <!-- forgot password form  -->
+
+  <!-- <div class="forpass-form-container">
+
+    <i class="fas fa-times" id="forpass-close"></i>
+ 
+    <form method="post" action="http://localhost:8084/FINAL_PROJECT/login">
+        <h3>Password reset</h3>
+        <label for="email">Enter Registered Email:</label>
+        <br>
+        <input type="tel" class="box" id="fEmail" name="email" placeholder="example@gmail.com" required/>
+        <br> 
+        <br>  
+        <label for="otp">Enter OTP:</label>
+        <br>
+        <input type="text" class="otp-box" id="otp" name="otp" required>
+        <button type="button" class="otp-btn" id="send-otp" onclick="sendOTP()">Send OTP</button>
+        <input name="uPASS" id="forPass" type="password" class="box" placeholder="Enter your new password">
+        <input name="uPASS" id="conPass" type="confirm-password" class="box" placeholder="Confirm your new password">
+        <p id="error-message" style="color: red; display: none;">Passwords do not match.</p>
+        <input type="submit" value="confirm" class="btn">
+        
+    </form>
+  </div> -->
+
+
+<!-- home section starts  -->
+<div class="home-bg">
+
+<div class="container home">
+
+   <section class="flex" data-aos-delay="600">
+
+      <div class="content">
+         <h3>adventure is worthwhile</h3>
+         <p>discover new places with us, adventure awaits</p>
+         <a href="#" class="btn">discover more</a>
+     </div>
+
+   </section>
+
+</div>
+
+
+<!-- about section starts  -->
+
+<div class="container about">
+
+    <h1 class="heading" data-aos="zoom-out">3 easy steps</h1>
+ 
+    <section>
+       <div class="grid">
+          
+          <div class="box" data-aos="fade-up">
+             <img src="images/about-img-1.svg" alt="">
+             <h3>easy bookings</h3>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sed blanditiis.</p>
+          </div>
+ 
+          <div class="box" data-aos="fade-up">
+             <img src="images/about-img-2.svg" alt="">
+             <h3>travel world</h3>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sed blanditiis.</p>
+          </div>
+ 
+          <div class="box" data-aos="fade-up">
+             <img src="images/about-img-3.svg" alt="">
+             <h3>enjoy tours</h3>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sed blanditiis.</p>
+          </div>
+ 
+       </div>
+ 
+    </section>
+ 
+ </div>
+ 
+ <!-- about section ends -->
+ 
+ <!-- reviews section starts  -->
+ 
+ <section class="reviews" id="reviews">
+
+   <h1 class="heading1"> client's reviews</h1>
+
+   <div class="swiper reviews-slider">
+
+       <div class="swiper-wrapper">
+
+           <div class="swiper-slide box">
+               <img src="images/pic-1.png" alt="">
+               <h3>john deo</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, dignissimos?</p>
+               <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+               </div>
+           </div>
+
+           <div class="swiper-slide box">
+               <img src="images/pic-2.png" alt="">
+               <h3>titu </h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, dignissimos?</p>
+               <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+               </div>
+           </div>
+
+           <div class="swiper-slide box">
+               <img src="images/pic-3.png" alt="">
+               <h3>akash </h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, dignissimos?</p>
+               <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+               </div>
+           </div>
+
+           <div class="swiper-slide box">
+               <img src="images/pic-4.png" alt="">
+               <h3>binoy </h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, dignissimos?</p>
+               <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+               </div>
+           </div>
+
+           <div class="swiper-slide box">
+               <img src="images/pic-5.png" alt="">
+               <h3>kaleen bhaiya</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, dignissimos?</p>
+               <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+               </div>
+           </div>
+
+           <div class="swiper-slide box">
+               <img src="images/pic-6.png" alt="">
+               <h3>munna bhaiya</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, dignissimos?</p>
+               <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+               </div>
+           </div>
+
+
+       </div>
+
+
+   </div>
+</section>
+ <!-- reviews section ends -->
+</div>
+
+<!-- home section ends -->
+
+ <!-- footer section  -->
+
+ <section class="footer">
+
+   <div class="box-container">
+
+       <div class="box">
+           <h3>about us</h3>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia necessitatibus cumque eius vero
+               nesciunt consequatur sit amet mollitia nostrum tempore ab eum numquam, maiores rerum qui maxime
+               totam fuga! Voluptates molestiae mollitia repudiandae asperiores quibusdam aperiam laudantium vitae
+               fugit ex.</p>
+       </div>
+       <div class="box">
+           <h3>branch locations</h3>
+           <a href="#"> india </a>
+           <a href="#"> usa </a>
+           <a href="#"> japan </a>
+           <a href="#"> united kingdom </a>
+           <a href="#"> australia </a>
+           <a href="#"> portugal </a>
+           <a href="#"> brazil </a>
+           <a href="#"> dubai </a>
+           <a href="#"> italy </a>
+           <a href="#"> france </a>
+           <a href="#"> germany </a>
+       </div>
+       <div class="box">
+           <h3>quick links</h3>
+           <a href="#"> home </a>
+           <a href="#"> book </a>
+           <a href="#"> packages </a>
+           <a href="#"> services </a>
+           <a href="#"> gallery </a>
+           <a href="#"> review </a>
+           <a href="#"> contact </a>
+       </div>
+       <div class="box">
+           <h3>follow us</h3>
+           <a href="#"> facebook </a>
+           <a href="#"> instagram </a>
+           <a href="#"> twitter </a>
+           <a href="#"> youtube </a>
+           <a href="#"> linkedin </a>
+       </div>
+
+   </div>
+
+   <!-- <h1 class="credit"> credated by <span></span> | all rights reserved! </h1> -->
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

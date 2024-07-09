@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>OTP verification</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/media.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <style>
+        .Verification-form-container{
+    background: url('../images/home-bg.jpg') no-repeat rgba(0,0,0,.5);
+    /* position: fixed; */
+    top: -120%; left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    /* background: rgba(0, 0, 0, .7); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Verification-form-container form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 50rem;
+}
+
+.Verification-form-container form h3{
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.Verification-form-container form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+}
+
+.Verification-form-container form .box:focus{
+    border-color: #ffa500;
+}
+
+.Verification-form-container form label{
+    font-size: 1.5rem;
+}
+
+.Verification-form-container form .btn{
+    display: block;
+    width: 100%;
+}
+
+.Verification-form-container form p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.Verification-form-container form p a{
+    color: #ffa500;
+}
+
+.Verification-form-container form p a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: #ffa500;
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid #ffa500;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: rgba(255, 165, 0, .2);
+    color: #ffa500;
+}
+    </style>
+    
+    </head>
+    <body>
+        <!-- Login form  -->
+ 
+    <div class="Verification-form-container">
+   
+      <form method="post" action="http://localhost:11756/Travel_Booking_System/ValidateEmail">
+          <h3>Verification</h3>
+          <input name="EMAIL" type="email" class="box" placeholder="Enter your email">
+          <input id="Verification" type="submit" value="Verify now" class="btn">
+          <p>Back to login? <a href="login.html" >click here</a></p>
+      
+      </form>
+    </div>
+    </body>
+</html>
